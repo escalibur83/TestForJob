@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8ad915-6bbb-4ea7-83d2-43e8714d725e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameTestHistoryForSkyWind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTestHistoryForSkyWind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GameTestHistoryForSkyWind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GameTestHistoryForSkyWind.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
