@@ -16,25 +16,16 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class GameTestHistoryForSkyWind {
 
     public static void main (String[] args) throws InterruptedException, IOException {
 
-        ReadToFile rearToFile = new ReadToFile();
+        ReadToFile readToFile = new ReadToFile();
+        OpenToChrome openToChrome = new OpenToChrome();
 
-        rearToFile.fileHelp();
-
-        WebDriver chromeDriver = new ChromeDriver();
-        chromeDriver.get("http://gc.gaming.skywindgroup.com/mammothmillions/develop/396/index.html?lang=" + "en");
-        Thread.sleep(20000);
-        WebElement infoButton = chromeDriver.findElement(By.xpath(".//*[@ class = \'footer-active-element footer-icon footer-help-icon menu-help menu-disabling-sensitive\']"));
-        infoButton.click();
-        Thread.sleep(500);
-        WebElement infoText = chromeDriver.findElement(By.xpath(".//*[@ class = \"window-content\"]"));
-        String textOfGames = infoText.getText();
-        chromeDriver.quit();
-        System.out.println(textOfGames);
-
+        readToFile.fileHelp();
+        openToChrome.readToRealGame();
     }
 }

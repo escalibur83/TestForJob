@@ -19,13 +19,29 @@ class ReadToFile {
         return sheet;
     }
 
+    public ArrayList<String> cuntryCod() throws IOException {
+
+        ArrayList<String> localisationCode = new ArrayList<String>();
+
+        Sheet sheet = sheet();
+        int x = 0;
+        for (int c = 1; c <= 19; c++) {
+            Row row = sheet.getRow(6);
+            Cell cell = row.getCell(c);
+            String line = cell.getStringCellValue();
+            localisationCode.add(x,line);
+            x++;
+        }
+        return localisationCode;
+    }
+
     public ArrayList<String> fileHelp () throws IOException {
 
         ArrayList<String> allTextFromHelp = new ArrayList<String>();
 
         Sheet sheet = sheet();
         int c = 1;
-        for (int p = 0; p<=12; p++)
+        for (int p = 0; p<=18; p++)
         {
             String textFromFiles = "";
             for (int r = 60; r >= 8; r--) {

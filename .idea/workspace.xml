@@ -4,7 +4,9 @@
     <list default="true" id="0a8ad915-6bbb-4ea7-83d2-43e8714d725e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameTestHistoryForSkyWind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTestHistoryForSkyWind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rearToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReadToFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/GameTestHistoryForSkyWind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GameTestHistoryForSkyWind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ReadToFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ReadToFile.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,9 +89,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/rearToFile.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/test/java/OpenToChrome.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
