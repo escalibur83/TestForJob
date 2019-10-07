@@ -21,25 +21,20 @@ public class GameTestHistoryForSkyWind {
 
     public static void main (String[] args) throws InterruptedException, IOException {
 
+        ReadToFile rearToFile = new ReadToFile();
+
+        rearToFile.fileHelp();
+
         WebDriver chromeDriver = new ChromeDriver();
         chromeDriver.get("http://gc.gaming.skywindgroup.com/mammothmillions/develop/396/index.html?lang=" + "en");
-        Thread.sleep(15000);
+        Thread.sleep(20000);
         WebElement infoButton = chromeDriver.findElement(By.xpath(".//*[@ class = \'footer-active-element footer-icon footer-help-icon menu-help menu-disabling-sensitive\']"));
         infoButton.click();
         Thread.sleep(500);
         WebElement infoText = chromeDriver.findElement(By.xpath(".//*[@ class = \"window-content\"]"));
-        String text = infoText.getText();
+        String textOfGames = infoText.getText();
         chromeDriver.quit();
-        System.out.println(text);
+        System.out.println(textOfGames);
 
-        FileInputStream file = new FileInputStream(new File("D:/GitRep/TestForJob/HelpGenericTextsDesktop.xlsx"));
-        Workbook excelHelpBook = new XSSFWorkbook(file);
-        Sheet sheet = excelHelpBook.getSheetAt(0);
-        Row row = sheet.getRow(9);
-        Cell cell = row.getCell(1);
-        System.out.println(cell.getStringCellValue());
-        Row row1 = sheet.getRow(11);
-        Cell cell1 = row1.getCell(1);
-        System.out.println(cell1.getStringCellValue());
     }
 }
