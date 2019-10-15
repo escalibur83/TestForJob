@@ -13,17 +13,19 @@ public class OpenToChrome {
         ReadToFile readToFile = new ReadToFile();
         ArrayList<String> cod = readToFile.cuntryCod();
         ArrayList<String> helpWithAllLang = new ArrayList();
-        for (int i=0; i< cod.size(); i++)
+        for (int i=0; i< 2; i++) //cod.size()
         {
             WebDriver chromeDriver = new ChromeDriver();
             chromeDriver.get("http://gc.gaming.skywindgroup.com/mammothmillions/develop/396/index.html?lang=" + cod.get(i));
             Thread.sleep(15000);
-            WebElement infoButton = chromeDriver.findElement(By.xpath(".//*[@ class = \'footer-active-element footer-icon footer-help-icon menu-help menu-disabling-sensitive\']"));
+            WebElement infoButton = chromeDriver.findElement(By.xpath(".//*[@ class = \'active-element footer-icon footer-help-icon menu-help menu-disabling-sensitive\']"));
             infoButton.click();
-            Thread.sleep(500);
+            Thread.sleep(1000);
             WebElement infoText = chromeDriver.findElement(By.xpath(".//*[@ class = \"window-content\"]"));
             String textOfGames = infoText.getText();
             helpWithAllLang.add(i,textOfGames);
+            System.out.println("Game load! lang="+cod.get(i) + " #" +i);
+            Thread.sleep(500);
             chromeDriver.quit();
         }
         return helpWithAllLang;

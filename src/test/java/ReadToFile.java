@@ -5,12 +5,10 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
 class ReadToFile {
-
 
     public Sheet sheet () throws IOException {
         FileInputStream file = new FileInputStream(new File("D:/GitRep/TestForJob/HelpGenericTextsDesktop.xlsx"));
@@ -30,6 +28,7 @@ class ReadToFile {
             Cell cell = row.getCell(c);
             String line = cell.getStringCellValue();
             localisationCode.add(x,line);
+            System.out.println("File read! Lang: "+line+ " #"+x);
             x++;
         }
         return localisationCode;
