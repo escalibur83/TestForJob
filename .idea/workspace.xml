@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8ad915-6bbb-4ea7-83d2-43e8714d725e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/aleks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameTestHistoryForSkyWind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTestHistoryForSkyWind.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/OpenToChrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OpenToChrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ReadToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReadToFile.java" afterDir="false" />
@@ -94,6 +97,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/CompareWords.java</url>
           <line>5</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/OpenToChrome.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

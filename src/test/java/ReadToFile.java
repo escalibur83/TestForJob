@@ -17,14 +17,14 @@ class ReadToFile {
         return sheet;
     }
 
-    public ArrayList<String> cuntryCod() throws IOException {
+    public ArrayList<String> countryCod() throws IOException {
 
         ArrayList<String> localisationCode = new ArrayList<String>();
 
         Sheet sheet = sheet();
         int x = 0;
-        for (int c = 1; c <= 19; c++) {
-            Row row = sheet.getRow(6);
+        for (int c = 1; c <= 18; c++) {
+            Row row = sheet.getRow(0);
             Cell cell = row.getCell(c);
             String line = cell.getStringCellValue();
             localisationCode.add(x,line);
@@ -39,11 +39,11 @@ class ReadToFile {
         ArrayList<String> allTextFromHelp = new ArrayList<String>();
 
         Sheet sheet = sheet();
-        int c = 1;
+        int c = 0;
         for (int p = 0; p<=18; p++)
         {
             String textFromFiles = "";
-            for (int r = 60; r >= 8; r--) {
+            for (int r = 55; r >= 1; r--) {
                 Row row = sheet.getRow(r);
                 Cell cell = row.getCell(c);
                 String line = cell.getStringCellValue();
