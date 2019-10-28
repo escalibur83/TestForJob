@@ -7,10 +7,12 @@ public class GameTestHistoryForSkyWind {
 
     public static void main (String[] args) throws InterruptedException, IOException {
 
-        ///diffMatchPatch.Operation.valueOf("h");
 
-        //ReadToFile readToFile = new ReadToFile();
-        //OpenToChrome openToChrome = new OpenToChrome();
+        ReadToFile readToFile = new ReadToFile();
+        OpenToChrome openToChrome = new OpenToChrome();
+
+        readToFile.sheet(".src/main/resources/HelpTheLastKindom.xlsx");
+        openToChrome.readToRealGame("http://gc.gaming.skywindgroup.com/lastkingdom/develop/413/index.html");
 
         //ArrayList<String> fileText = readToFile.fileHelp();
         //ArrayList<String> gameText = openToChrome.readToRealGame();
@@ -29,8 +31,5 @@ public class GameTestHistoryForSkyWind {
         {
             System.out.println (item.toString());
         }
-
-
-
     }
 }

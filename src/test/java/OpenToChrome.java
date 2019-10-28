@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class OpenToChrome {
 
-    public ArrayList<String> readToRealGame() throws InterruptedException, IOException {
+    public ArrayList<String> readToRealGame(String URL) throws InterruptedException, IOException {
 
         ReadToFile readToFile = new ReadToFile();
         ArrayList<String> cod = readToFile.countryCod();
@@ -16,7 +16,7 @@ public class OpenToChrome {
         for (int i=0; i< 2; i++) //cod.size()
         {
             WebDriver chromeDriver = new ChromeDriver();
-            chromeDriver.get("http://gc.gaming.skywindgroup.com/lastkingdom/develop/388/index.html?lang=" + cod.get(i));
+            chromeDriver.get(URL +"?" + cod.get(i));
             Thread.sleep(20000);
             WebElement infoButton = chromeDriver.findElement(By.xpath(".//*[@ class = \'active-element footer-icon footer-help-icon menu-help menu-disabling-sensitive\']"));
             infoButton.click();
